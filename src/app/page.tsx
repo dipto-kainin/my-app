@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import React from "react";
 
-//7044932097
+//7044932097 --> my phone number
 
 type data_ = {
   id: String;
