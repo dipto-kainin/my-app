@@ -74,13 +74,18 @@ export default function Home() {
           setDataToshow(data?.slice(0, dataToshow.length + 3))
         }}
         className={`mb-20 px-2.5 hover:cursor-pointer ${dataToshow.length === data.length
-            ? "bg-gray-300 text-gray-600"
-            : "bg-amber-50 text-black"
+          ? "bg-gray-300 text-gray-600"
+          : "bg-amber-50 text-black"
           }`}
         disabled={dataToshow.length === data.length}
       >
         show more
       </button>
+      <div className="flex justify-center items-center flex-col">
+        <h1 className="text-2xl font-bold">My Profile</h1>
+        <h2 className="text-xl font-semibold">John Doe</h2>
+        <p className="text-gray-600">Web Developer</p>
+      </div>
     </div>
   );
 }
